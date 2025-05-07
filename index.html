@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style html.css">
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <p>HTML編</p>
+      <a href="/Users/mastudo/Desktop/webデザ/Lesson/CSS basic/CSS basic.html">CSS基本編</a>
+      <a href="/Users/mastudo/Desktop/webデザ/Lesson/CSS Advanced/CSS advanced.html">CSS応用編</a>
+      <a href="/Users/mastudo/Desktop/webデザ/Lesson/CSS Selectors/selectors.html">Selectors編</a>
+    </div>
+    <div>
+      <a href="/Users/mastudo/Desktop/webデザ/Lesson/CSS Flexbox/flexbox.html">Flexbox編</a>
+      <a href="/Users/mastudo/Desktop/webデザ/Lesson/CSS MediaQueries/MediaQueries.html">MediaQueries編</a>
+      <a href="/Users/mastudo/Desktop/webデザ/Lesson/CSS Animation/Animation.html">Animation編</a>
+      <a href="/Users/mastudo/Desktop/webデザ/Lesson/CSS Nesting/Nesting.html">Nesting編</a>
+      <a href="/Users/mastudo/Desktop/webデザ/Lesson/CSS Grid/inndex.html">Grid編</a>
+    </div>
+  </header>
+  <a href="/Users/mastudo/Desktop/webデザ/Lesson/index.html" class="a-lesson">←Lesson</a>
+  <a class="a-top" href="#">↑TOP</a>
+  <main>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>コード</th>
+            <th>名称</th>
+            <th>意味</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>&lt;h(数字)&gt;</code></td>
+            <td>heading</td>
+            <td>見出しを表す。数が小さいほどサイズが小さくなる</td>
+          </tr>
+          <tr>
+            <td><code>&lt;p&gt;</code></td>
+            <td>paragraph</td>
+            <td>テキストの段落を書く際に用いる</td>
+          </tr>
+          <tr>
+            <td><code>&lt;img&gt;</code></td>
+            <td>image</td>
+            <td>画像を配置する際に用いる</td>
+          </tr>
+          <tr>
+            <td><code>src=""</code></td>
+            <td>ソース(source)</td>
+            <td>画像などの出所を表示する属性。""内にはファイル名を指定する</td>
+          </tr>
+          <tr>
+            <td><code>alt=""</code></td>
+            <td>オルト(alternative)</td>
+            <td>画像が表示できなかった場合の代替テキストを指定する属性。</td>
+          </tr>
+          <tr>
+            <td><code>width=""</code></td>
+            <td>ウィドゥス</td>
+            <td>要素の幅を指定する属性。<br><code>&lt;body&gt;</code>に挿入する場合は自動的にpx表示となり""内には数字のみ指定する。</td>
+          </tr>
+          <tr>
+            <td><code>height=""</code></td>
+            <td>ハイト</td>
+            <td>要素の高さを指定する属性。<br></be><code>&lt;body&gt;</code>に挿入する場合は自動的にpx表示となり""内には数字のみ指定する。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;ul&gt;</code></td>
+            <td>Unordered List</td>
+            <td>箇条書きリストを表す。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;li&gt;</code></td>
+            <td>List Item</td>
+            <td>リストの中身（項目）を表す。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;ol&gt;</code></td>
+            <td>Ordered List</td>
+            <td>順序付きリストを表す。項目には<code>&lt;ol&gt;</code>と同じく<code>&lt;li&gt;</code>を用いる。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;dl&gt;</code></td>
+            <td>Description List</td>
+            <td>説明付きリストを表す。項目には<code>&lt;dt&gt;</code>を用いる。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;dt&gt;</code></td>
+            <td>Description Term</td>
+            <td><code>&lt;dl&gt;</code>の項目を挿入する際に用いる。説明には<code>&lt;dd&gt;</code>を用いる。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;dd&gt;</code></td>
+            <td>Description Details</td>
+            <td><code>&lt;dt&gt;</code>の説明を表す。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;table&gt;</code></td>
+            <td>table</td>
+            <td>テーブルリストを作成する際に用いる領域。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;thead&gt;</code></td>
+            <td>Table head</td>
+            <td>テーブルリストの見出し領域を意味する。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;tbody&gt;</code></td>
+            <td>Table body</td>
+            <td>テーブルリストの本体領域を意味する。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;tr&gt;</code></td>
+            <td>Table row</td>
+            <td>row=行の意。<br>テーブルの表それぞれを行ごとに区切る役目を持つ。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;th&gt;</code></td>
+            <td>Table header</td>
+            <td><code>&lt;thead&gt;</code>内のセル作成に用いる。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;td&gt;</code></td>
+            <td>Table data</td>
+            <td><code>&lt;tbody&gt;</code>内のセル作成に用いる。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;a&gt;</code></td>
+            <td>anchor</td>
+            <td>囲った文字をリンクにする。</td>
+          </tr>
+          <tr>
+            <td><code>href=""</code></td>
+            <td>エイチレフ属性</td>
+            <td>hypertext reference<br><code>&lt;a&gt;</code>のリンク先を指定する。</td>
+          </tr>
+          <tr>
+            <td><code>target=""</code></td>
+            <td>ターゲット</td>
+            <td>リンク先の文書を開くフレームやウインドウを指定するための属性。<br>"_blank"を指定することで、クリックしたリンクが別タブで表示される。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;section&gt;</code></td>
+            <td>セクション</td>
+            <td>それぞれの見出しがまとめている内容の範囲を区切るためのタグ。実行画面上に影響はない。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;nav&gt;</code></td>
+            <td>navigation</td>
+            <td>ページの主要なナビゲーションを区切るためのタグ。実行画面上に影響はない。</td>
+          </tr>
+          <tr>
+            <td><code>id=""</code></td>
+            <td>ID属性</td>
+            <td>囲っている範囲に名前をつけるための属性。主にリンク先の指定に使用する。<br>リンク元から指定する際には、必ず付けたidの前に＃を入れる。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;header&gt;</code></td>
+            <td>ヘッダー</td>
+            <td>段落やページの導入的なコンテンツを区切るためのタグ。実行画面上に影響はない。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;footer&gt;</code></td>
+            <td>フッター</td>
+            <td>段落やページの下部に表示する内容。主に著作権情報やSNSリンクの表示などに用いる。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;small&gt;</code></td>
+            <td>スモール</td>
+            <td>文字を注釈的に小さく表示したい際に用いるタグ。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;DOCCTYPE&gt;</code></td>
+            <td>ドックタイプ</td>
+            <td>文章宣言と呼ばれる、1行目に入力される情報。HTMLで書かれていると宣言するためのもの。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;HTML&gt;</code></td>
+            <td>HTML</td>
+            <td>HTML文書を作成するためのタグ。このタグで全体を囲う、一番大枠のタグ。</td>
+          </tr>
+          <tr>
+            <td><code>lang=""</code></td>
+            <td>ラング属性</td>
+            <td><code>&lt;HTML&gt;</code>に付与する、このHTMLで書かれている言語を指定する属性。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;head&gt;</code></td>
+            <td>ヘッド</td>
+            <td>この文書を解析して活用するプログラムに指定する情報の領域。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;body&gt;</code></td>
+            <td>ボディ</td>
+            <td>ブラウザに表示する内容を指定する領域。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;meta&gt;</code></td>
+            <td>メタ情報</td>
+            <td>特に文章に関する情報を表現するための領域。<code>&lt;head&gt;</code>に用い、文書を管理するための情報を指定する。</td>
+          </tr>
+          <tr>
+            <td><code>charset=""</code></td>
+            <td>キャラセット</td>
+            <td><code>&lt;HTML&gt;</code>の文字コードを指定する属性。現在のHTML（Windows 10のバージョン1903（2019年春以降）から）ではUFT-8を使用。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;title&gt;</code></td>
+            <td>タイトル</td>
+            <td>ブラウザのタブ名やブックマーク時の名称を表示するタグ</td>
+          </tr>
+          <tr>
+            <td><code>name=""</code></td>
+            <td>ネーム属性</td>
+            <td>要素に名前を設定するための属性。<code>&lt;meta&gt;</code>属性として付与することで、そのmetaタグがどの要素を持つか決定する。<br></td>
+          </tr>
+          <tr>
+            <td><code>"description"</code></td>
+            <td>ディスクリプション</td>
+            <td>
+              説明を意味する入力部品。<code>&lt;meta&gt;</code>タグに<code>content</code>属性で指定することで、<br>入力した要素が検索結果のサイトタイトル下部に表示される説明として機能する。
+            </td>
+          </tr>
+          <tr>
+            <td><code>content=""</code></td>
+            <td>コンテンツ属性</td>
+            <td><code>&lt;meta&gt;</code>データの内容を指定する属性。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;link&gt;</code></td>
+            <td>リンク</td>
+            <td>現在の文書と外部のファイルやページとの関係を結びつけるタグ。<br>favicon(ブラウザのタブ名横に表示される小さいアイコン)などの指定にも用いる。</td>
+          </tr>
+          <tr>
+            <td><code>rel=""</code></td>
+            <td>レル(relation)</td>
+            <td>関係の意。<code>&lt;link&gt;</code>に外部情報の関係性を指定する属性。<br>後方に<code>href</code>属性を用いてリンク先を指定する。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;aside&gt;</code></td>
+            <td>アサイド</td>
+            <td>本文とは関係の薄い<code>&lt;footer&gt;</code>などを区切る際に用いるタグ。実行画面上に影響はない。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;main&gt;</code></td>
+            <td>メイン</td>
+            <td>文書中で主となるコンテンツを区切る際に用いるタグ。<br><code>&lt;main&gt;</code>はページ内に1つしか配置できない。実行画面上に影響はない。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;article&gt;</code></td>
+            <td>アーティクル</td>
+            <td>記事の意。文書内で自己完結した、また個別に配信や再利用を行うことを意図した情報をまとめるタグ。実行画面上に影響はない。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;time&gt;</code></td>
+            <td>タイム</td>
+            <td>日時を表すタグ。タグ内の日時表記は自由だが、<br>別途後述の<code>datetime=""</code>属性を用いてyyyy-mm-dd hh:mm の形式で指定する必要がある。</td>
+          </tr>
+          <tr>
+            <td><code>datetime=""</code></td>
+            <td>デイトタイム</td>
+            <td>yyyy-mm-dd hh:mm
+              の形式を用いて<code>&lt;time&gt;</code>の日時をコンピュータ内に認識させるための属性。<br><code>&lt;time&gt;</code>タグ内の時間表記がyyyy-mm-dd
+              hh:mm の場合は不要。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;br&gt;</code></td>
+            <td>ブレイク(break)</td>
+            <td>改行をする際に挿入するタグ。終了タグが不要で<code>&lt;br&gt;</code>単体で成り立つ。<br>段落を作る<code>&lt;p&gt;</code>との混同に注意が必要。</td>
+          </tr>
+          <tr>
+            <td><code>&</code><code>~</code><code>;</code></td>
+            <td>文字参照</td>
+            <td>
+              特殊記号やコードで用いる記号などを文字として表示するためのコード。<br><code>&</code>と<code>;</code>の間に”キーワード”で指定するものを"文字実体参照"、<br>”<code>#</code>番号”で指定するものを”数値文字参照"という。<br>&lt;（小なり）は<code>lt</code>(Less
+              Than)、&gt;（大なり）は<code>gl</code>(Greater Than)で指定する。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;code&gt;</code></td>
+            <td>コード</td>
+            <td>文中でプログラムのコードを表現する際に、表現したいコードをこのタグで囲い表示を変化させる。<br>&lt;p&gt;（文字として挿入）→<code>&lt;p&gt;</code>（コードとして挿入）
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;span&gt;</code></td>
+            <td>スパン</td>
+            <td>指定したテキストにCSSやJavaScriptを適用し、デザイン変更を行うためのタグ。<br>主に文中の一部範囲のスタイリングを整える際に使用する。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;div&gt;</code></td>
+            <td>ディブ(division)</td>
+            <td>分割の意。囲った範囲を分割しグループ化する働きを持つタグ。<br>主にまとまった範囲のスタイリングを一括で整える際に使用する。</td>
+          </tr>
+          <tr>
+            <td><code>style=""</code></td>
+            <td>スタイル属性</td>
+            <td>
+              主にCSSで用いる属性。付与したタグのスタイルを指定する。<br><code>color=""</code>や<code>margin-left=""</code>など様々な指定を行う。詳細は別述のCSSにて。
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;form&gt;</code></td>
+            <td>フォーム</td>
+            <td>フォームの範囲を指定するタグ。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;input&gt;</code></td>
+            <td>インプット</td>
+            <td>フォーム内に１行のみの入力欄を表示させるタグ。<br>後述の<code>type=""</code>属性で入力タイプを指定する。</td>
+          </tr>
+          <tr>
+            <td><code>type=""</code></td>
+            <td>タイプ属性</td>
+            <td>タグのタイプを指定する属性。<br><code>&lt;input&gt;</code>に<code>"text"</code>を付与することで、テキストを入力できるようになる。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;textarea&gt;</code></td>
+            <td>テキストエリア</td>
+            <td>改行を含む、複数行のテキストボックスを作成する際に用いるタグ。<br>予め文字を入力する際、字下げがあると空白としてデータに反映されてしまうため注意。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;label&gt;</code></td>
+            <td>ラベル</td>
+            <td>要素に対してラベルをつけるためのタグ。</td>
+          </tr>
+          <tr>
+            <td><code>for=""</code></td>
+            <td>フォア属性</td>
+            <td>
+              <code>&lt;label&gt;</code>が説明するフォームを指定するための属性。<code>id=""</code>と合わせて用いる。<br>フォームをラベルで囲うことで、<code>for=""</code>を省略することも可能。
+            </td>
+          </tr>
+          <tr>
+            <td><code>placeholder=""</code></td>
+            <td>プレイスホルダー</td>
+            <td>テキストボックス内に予め文章を表示させるための属性。<br>ボックスに入力し始めると消える、文字が薄く表示される等デメリットあり。</td>
+          </tr>
+          <tr>
+            <td><code>"checkbox"</code></td>
+            <td>チェックボックス</td>
+            <td>チェックボックスを挿入するための入力部品。<code>&lt;input&gt;</code>タグに<code>text</code>属性で指定する。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;fieldset&gt;</code></td>
+            <td>フィールドセット</td>
+            <td>フォームの入力項目をグループ化するためのタグ。<code>&lt;fieldset&gt;</code>でフォームを囲うことで、囲われたホームの周りに枠が表示される。</td>
+          </tr>
+          <tr>
+            <td><code>&lt;legend&gt;</code></td>
+            <td>レジェンド</td>
+            <td>LEGEND：凡例、説明文、銘などの意。グループ化されたフォームの入力項目に対しタイトルをつけるためのタグ。</td>
+          </tr>
+          <tr>
+            <td><code>"radio"</code></td>
+            <td>ラジオ</td>
+            <td>
+              ラジオボタンを挿入するための入力部品。<code>&lt;input&gt;</code>タグに<code>text</code>属性で指定する。<br><code>name</code>属性で統一の値を指定することで、ラジオボタンとして機能する。
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;select&gt;</code></td>
+            <td>セレクト</td>
+            <td>
+              ドロップリストを表示するためのタグ。<code>&lt;div&gt;</code>タグで囲い要素を分割することで、タグ前にラベルを指定することができる。<br>後述の<code>&lt;option&gt;</code>タグ、ラベルをまとめて<code>&lt;label&gt;</code>タグで囲うことで、それぞれの要素を関連づける。
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;option&gt;</code></td>
+            <td>オプション</td>
+            <td>ドロップリストの選択肢を指定するタグ。</td>
+          </tr>
+          <tr>
+            <td><code>size=""</code></td>
+            <td>サイズ属性</td>
+            <td>
+              指定した要素の表示サイズを指定する属性。<code>&lt;select&gt;</code>タグに対して付与することで、<br>指定した数値分行が表示される。<br>また、そのような表示の場合一般にはドロップボックスではなくリストボックスという。
+            </td>
+          </tr>
+          <tr>
+            <td><code>multiple=""</code></td>
+            <td>マルチプル属性</td>
+            <td>
+              <code>&lt;select&gt;</code>タグに対し、項目を複数選択できるように指定する属性。<br>機能上チェックボックスに代用されることが多く、リストボックスへの活用は少ない。<br>また、属性コードの為基本的には<code>multiple="multiple"</code>となるが、属性=名前の場合は<code>=""</code>を省き<code>multiple</code>のみ付与で指定可能。
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;button&gt;</code></td>
+            <td>ボタン</td>
+            <td>
+              ボタンを表示するタグ。<code>&lt;div&gt;</code>タグで閉じて用いる。<br><code>&lt;input type="submit" value="表示名"&gt;</code>を用いることでも表示できるが、<code>&lt;button&gt;</code>がより汎用性が高い。
+            </td>
+          </tr>
+          <tr>
+            <td><code>disabled</code></td>
+            <td>ディスエイブルド属性</td>
+            <td>
+              付与したタグの機能を止める属性。<code>&lt;button&gt;</code>に付与することでボタンがグレーアウトする。<br>必須情報を入力することで有効化になる、などの動作はJavaScriptで制御する。
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;value=""&gt;</code></td>
+            <td>バリュー属性</td>
+            <td>初期値やラベル、パラメータなどを指定するための属性。<code>&lt;input type="text"&gt;</code>に付与することで、ページを開くと予めセットした値が表示されるようになる。
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;checked=""&gt;</code></td>
+            <td>チェックド属性</td>
+            <td>
+              <code>&lt;checkbox&gt;</code>に付与することで、予めチェックがつくようになる属性。<br>属性=名前のため、<code>=""</code>は省略する。<br><code>&lt;input type="radio"&gt;</code>の複数項目に付与してしまった場合、最後に付与した項目のみ有効となる。
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;selected=""&gt;</code></td>
+            <td>セレクテッド属性</td>
+            <td><code>&lt;option&gt;</code>タグに使用する属性。付与すると予めリストが選択される状態になる。<br>属性=名前のため、<code>=""</code>は省略する。</td>
+          </tr>
+          <tr>
+            <td><code>"password"</code></td>
+            <td>パスワード</td>
+            <td>パスワードを入力するフォームで使用する入力部品。<br><code>&lt;input type="password"&gt;</code>として指定することで、入力した値が伏せ字になる。</td>
+          </tr>
+          <tr>
+            <td><code>"number"</code></td>
+            <td>ナンバー</td>
+            <td>
+              数値入力に特化した入力部品。<code>&lt;iput type="number"&gt;</code>と指定することで、<br>数値の上下を矢印で指定することが可能。<br>見え方や操作がブラウザ依存、古いブラウザでは動かない場合がある等注意が必要。
+            </td>
+          </tr>
+          <tr>
+            <td><code>"date"</code></td>
+            <td>デイト</td>
+            <td>
+              日付入力に特化した入力部品。<code>&lt;iput type="date"&gt;</code>と指定することで、<br>入力項目にカレンダーを表示しより直感的に日付を入力できる。<br>見え方や操作がブラウザ依存、古いブラウザでは動かない場合がある等注意が必要。
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </main>
+</body>
+
+</html>
